@@ -4,17 +4,13 @@ body{
   background-size:100vw 100vh;
   height:100px;
 }
-@media screen and (max-width: 400px) {
-    #container{
-	
-	background-image:url(https://media.istockphoto.com/id/531466314/vector/snakes-and-ladders.jpg?s=612x612&w=0&k=20&c=YYRwkxtVxAXrYV7kFCHKW4h0SHFS4sSSoaj-s9OeHF4=);
-	background-repeat: no-repeat;
-	width:70vw;
-	height:80vh;
-  	background-position-x: center;
-  	margin-top: 50px;
-  	opacity: 0.7;
-  }
+@media (max-width: 480px) {
+    #container {
+        background-size: 90vw 50vh; /* Adjust background size for mobile */
+        width: 100%;
+        height: auto; /* Let height adjust based on content or background */
+        margin-top: 20px; /* Reduce margin for smaller screens */
+    }
 }
 #container{
 	
