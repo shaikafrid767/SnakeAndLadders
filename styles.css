@@ -36,9 +36,7 @@ border:2px solid brown;
  
 
 @media only screen and (max-width: 480px) {
-  #total{
-  display:flex;
-  }
+ 
   .player {
     padding-top: 10px;
     border-radius: 50%;
@@ -50,7 +48,7 @@ border:2px solid brown;
   }
   #table {
     background-size: 100%;
-    flex=1;
+    height:70%;
     margin-top: 10px;
   }
 }
