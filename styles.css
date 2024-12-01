@@ -67,7 +67,7 @@ td {
 /* Additional Media Query for Extra Small Screens */
 @media only screen and (max-width: 480px) {
   td {
-    height: 10vh; /* Further adjust for very small screens */
+    height: 5vh; /* Further adjust for very small screens */
     width: 15vw;
   }
   .player {
