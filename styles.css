@@ -41,13 +41,17 @@ border:2px solid brown;
     padding-top: 10px;
     border-radius: 50%;
   }
+  td{
+    height:3.3vh;
+    width: 2.9vw;
+  }
   #img {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 15%; 
   }
   #table {
-    background-size: 130% 200%;
+    background-size: 130%;
     margin-top: 10px;
   }
 }
