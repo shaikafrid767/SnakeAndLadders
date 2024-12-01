@@ -27,7 +27,7 @@ border:2px solid brown;
  #table{
   background-image:url("img/snake.jpg");
   background-repeat: no-repeat;
-  background-size:32vw 70vh;
+  background-size:32vw 75vh;
   background-position-x: center;
   margin-top: 50px;
 }
