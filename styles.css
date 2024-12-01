@@ -1,4 +1,4 @@
-total{
+#total{
   display: flex;
 }
 body{
@@ -34,7 +34,7 @@ body{
 	  background-image:url("img/snake.jpg");
 	background-repeat: no-repeat;
   background-size:32vw 70vh;
- 
+  background-position-x:center;
   margin-top: 50px;
   opacity: 0.7;
 
