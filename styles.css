@@ -47,8 +47,7 @@ border:2px solid brown;
     border-radius: 15%; 
   }
   #table {
-    background-size: 100%;
-    height:70%;
+    background-size: 130% 200%;
     margin-top: 10px;
   }
 }
