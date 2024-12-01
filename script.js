@@ -129,7 +129,7 @@ function funp1(){
         //creating image tag and append
         let img=document.createElement("img");
         img.src='img/plog1.jpg';
-        img.height=30;
+        img.height=30   ;
         img.width=30;
         img.style.borderRadius='50px';
         document.getElementById(id).appendChild(img);
@@ -142,7 +142,7 @@ function funp1(){
     setTimeout(() => {
         let dice="img/"+randomNumber+".jpg";
         btn.src=dice;
-    }, 50);
+    }, 100);
     
     if(randomNumber==6||bit==1){
         flag=false;
@@ -207,7 +207,7 @@ function funp2(){
     setTimeout(() => {
         let dice="img/"+randomNumber+".jpg";
         btn.src=dice;
-    }, 50);
+    }, 100);
     
     if(randomNumber==6||bit==1){
         flag=true;
