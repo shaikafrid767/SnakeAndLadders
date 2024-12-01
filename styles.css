@@ -34,7 +34,13 @@ border:2px solid brown;
  
 
 @media only screen and (max-width: 480px) {
- 
+   td{
+    text-align: center;
+    padding:0px;
+    height:3.3vh;
+    width: 2.9vw;
+    border:2px solid brown;
+    }
   .player {
     padding-top: 10px;
     border-radius: 50%;
