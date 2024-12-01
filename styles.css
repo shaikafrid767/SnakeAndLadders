@@ -1,40 +1,87 @@
 
-body{
+body {
   background-image: url("img/body.gif");
   background-repeat: no-repeat;
-  background-size:100vw 100vh;
-  height:100px;
+  background-size: 100vw 100vh;
+  height: 100px;
 }
-#container{
- 
-	
+#container {
   opacity: 0.7;
-  }
-  td{
-	text-align: center;
-	padding:0px;
-	height:6.3vh;
-	width: 2.9vw;
-  border:2px solid brown;
-  }
-  .player{
-    border-radius: 80px;
-    cursor: pointer;
-    padding-top: 25px;
-  }
- #img{
-    border-radius: 10px; 
-    padding-left: 40px;
-    padding-right: 40px;
-    box-shadow: 2px 2px 20px wheat;
-    border-radius: 30%;
- }
-  #table{
-    background-image:url("img/snake.jpg");
-	background-repeat: no-repeat;
-  background-size:32vw 70vh;
+}
+td {
+  text-align: center;
+  padding: 0px;
+  height: 6.3vh;
+  width: 2.9vw;
+  border: 2px solid brown;
+}
+.player {
+  border-radius: 80px;
+  cursor: pointer;
+  padding-top: 25px;
+}
+#img {
+  border-radius: 10px; 
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 2px 2px 20px wheat;
+  border-radius: 30%;
+}
+#table {
+  background-image: url("img/snake.jpg");
+  background-repeat: no-repeat;
+  background-size: 32vw 70vh;
   background-position-x: center;
   margin-top: 50px;
-	
+}
+
+/* Responsive Design for Mobile Screens */
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: cover; /* Adjust background size for smaller screens */
+    height: auto; /* Allow flexibility for body height */
   }
- 
+  td {
+    height: 8vh; /* Adjust height to be larger on mobile */
+    width: 10vw; /* Increase width for better visibility */
+  }
+  .player {
+    padding-top: 15px; /* Reduce padding for smaller screens */
+    border-radius: 50%; /* Adjust border-radius to fit design */
+  }
+  #img {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 1px 1px 10px wheat; /* Reduce shadow intensity */
+    border-radius: 20%; /* Make border-radius less sharp */
+  }
+  #table {
+    background-size: 80vw auto; /* Adjust table background size */
+    margin-top: 20px; /* Reduce margin for smaller screens */
+  }
+  #container {
+    flex: 1; /* Expand container for better spacing */
+  }
+}
+
+/* Additional Media Query for Extra Small Screens */
+@media only screen and (max-width: 480px) {
+  td {
+    height: 10vh; /* Further adjust for very small screens */
+    width: 15vw;
+  }
+  .player {
+    padding-top: 10px;
+    border-radius: 50%;
+  }
+  #img {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: none; /* Remove shadow for simplicity */
+    border-radius: 15%; 
+  }
+  #table {
+    background-size: 100%; /* Ensure the table fits the screen width */
+    margin-top: 10px;
+  }
+}
