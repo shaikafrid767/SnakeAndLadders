@@ -36,10 +36,7 @@ border:2px solid brown;
  
 
 @media only screen and (max-width: 480px) {
-  td {
-    height: 5vh; /* Further adjust for very small screens */
-    width: 15vw;
-  }
+  
   .player {
     padding-top: 10px;
     border-radius: 50%;
@@ -47,11 +44,10 @@ border:2px solid brown;
   #img {
     padding-left: 10px;
     padding-right: 10px;
-    box-shadow: none; /* Remove shadow for simplicity */
     border-radius: 15%; 
   }
   #table {
-    background-size: 100% 50%; /* Ensure the table fits the screen width */
+    background-size: 100%;
     margin-top: 10px;
   }
 }
