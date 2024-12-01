@@ -53,8 +53,7 @@ border:2px solid brown;
   #table {
     background-size: 100%;
     height:500px;
-    background-position-x:left;
-    width:300px
+    width:500px
     margin-top: 10px;
   }
 }
