@@ -45,6 +45,8 @@ border:2px solid brown;
     border-radius: 15%; 
   }
   #table {
+    background-image:url("img/snake.jpg");
+     background-repeat: no-repeat;
     background-size: 90% 500px;
     height:500px;
     width:90%;
