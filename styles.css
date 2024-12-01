@@ -51,7 +51,7 @@ border:2px solid brown;
     border-radius: 15%; 
   }
   #table {
-    background-size: 130%;
+    background-size: 100%;
     margin-top: 10px;
   }
 }
