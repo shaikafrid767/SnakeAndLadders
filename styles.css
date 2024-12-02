@@ -37,8 +37,9 @@ width: 2.9vw;
    td{
     text-align: center;
     padding:0px;
-    height:24px;
+    height:25px;
     width: 25px;
+     text-align:center;
     }
   .player {
     padding-top: 10px;
