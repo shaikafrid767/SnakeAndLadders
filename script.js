@@ -4,6 +4,7 @@ let preid2=null,preimg2=null,flag=false;let check=2,bit,max100=0;
 function img(score,bit){
     let id='a'+score;
     let img=document.createElement("img");
+    img.setAttribute('class','id');
     if(bit==1){
         img.src='img/laugh.gif';
     }else if(bit==-1){
@@ -128,6 +129,7 @@ function funp1(){
         if(score1!=100){
         //creating image tag and append
         let img=document.createElement("img");
+        img.setAttribute('class','id');
         img.src='img/plog1.jpg';
         img.height=30   ;
         img.width=30;
@@ -193,6 +195,7 @@ function funp2(){
         if(score2!=100){
         //creating image tag and append
         let img=document.createElement("img");
+        img.setAttribute('class','id');
         img.src='img/plog2.jpg';
         img.height=30;
         img.width=30;
