@@ -55,8 +55,9 @@ border:1px solid black;
     background-repeat: no-repeat;
     background-size:100%;
     width:90%;
+    height:45%;
     margin-top: 10px;
-    border:2px solid brown;
+   
   }
   .id{
     height:20px;
