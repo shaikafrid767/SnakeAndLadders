@@ -236,11 +236,11 @@ function funp2(){
     }
     var btn=document.getElementById("img");
     btn.src='img/dice.gif';
-    setTimeout(()=>{
-        let audio=document.getElementById("audio");
-        audio.src='audio/roll-.mp3';
-        document.getElementById("p").load();
-    },100);
+    
+    let audio=document.getElementById("audio");
+    audio.src='audio/roll-.mp3';
+    document.getElementById("p").load();
+   
 
     //remove img tag from previous position
     if(score2>0){
