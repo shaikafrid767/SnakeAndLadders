@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Snakes & Ladders</title>
+  <link rel="shortcut icon" href="img/icon.webp" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+ </head>
+ <body onload="fun()">
+	<div id="body">
+		<img  id="win" src="">
+	<center>
+		<div id="total">
+		<div id="container">	
+			<table id="table">
+				<tr>
+					<td id="a100"></td><td id="a99"></td><td id="a98"></td><td id="a97"></td><td id="a96"></td><td id="a95"></td><td id="a94"></td><td id="a93"></td><td id="a92"></td><td id="a91"></td>        
+				</tr>
+				<tr>
+					<td id="a81"></td><td id="a82"></td><td id="a83"></td><td id="a84"></td><td id="a85"></td><td id="a86"></td><td id="a87"></td><td id="a88"></td><td id="a89"></td><td id="a90"></td>
+				</tr>
+				<tr>
+					<td id="a80"></td><td id="a79"></td><td id="a78"></td><td id="a77"></td><td id="a76"></td><td id="a75"></td><td id="a74"></td><td id="a73"></td><td id="a72"></td><td id="a71"></td>
+				</tr>
+				<tr>
+					<td id="a61"></td><td id="a62"></td><td id="a63"></td><td id="a64"></td><td id="a65"></td><td id="a66"></td><td id="a67"></td><td id="a68"></td><td id="a69"></td><td id="a70"></td>
+				</tr>
+				<tr>
+					<td id="a60"></td><td id="a59"></td><td id="a58"></td><td id="a57"></td><td id="a56"></td><td id="a55"></td><td id="a54"></td><td id="a53"></td><td id="a52"></td><td id="a51"></td>
+				</tr>
+				<tr>
+					<td id="a41"></td><td id="a42"></td><td id="a43"></td><td id="a44"></td><td id="a45"></td><td id="a46"></td><td id="a47"></td><td id="a48"></td><td id="a49"></td><td id="a50"></td>
+				</tr>
+				<tr>
+					<td id="a40"></td><td id="a39"></td><td id="a38"></td><td id="a37"></td><td id="a36"></td><td id="a35"></td><td id="a34"></td><td id="a33"></td><td id="a32"></td><td id="a31"></td>
+				</tr>
+				<tr>
+					<td id="a21"></td><td id="a22"></td><td id="a23"></td><td id="a24"></td><td id="a25"></td><td id="a26"></td><td id="a27"></td><td id="a28"></td><td id="a29"></td><td id="a30"></td>
+				</tr>
+				<tr>
+					<td id="a20"></td><td id="a19"></td><td id="a18"></td><td id="a17"></td><td id="a16"></td><td id="a15"></td><td id="a14"></td><td id="a13"></td><td id="a12"></td><td id="a11"></td>
+				</tr>
+				<tr>
+					<td id="a1"></td><td id="a2"></td><td id="a3"></td><td id="a4"></td><td id="a5"></td><td id="a6"></td><td id="a7"></td><td id="a8"></td><td id="a9"></td><td id="a10"></td>
+				</tr>
+			</table>
+		 </div>
+		 <br>
+			<img class="player" id="p1" onclick="funp1()" src="img/plog1.jpg" height="80px" width="80px" style="box-shadow: 2px 2px 40px green">
+			<img id="img" src="img/start.jpg" height="70px" width="70px">
+			<img class="player" id="p2" onclick="funp2()" src="img/plog2.jpg" height="80px" width="80px"><br>
+			<h3 id="play1">Player1 turn</h3>
+			<h3 id="play2"></h3>
+		</div>
+		<audio autoplay id="p" >
+			<source id="audio" src="" type="audio/mpeg">
+		</audio>
+		<audio autoplay id="wa" >
+			<source id="win_audio" src="" type="audio/mpeg">
+		</audio>
+	</center>
+	</div>
+ </body>
+</html>

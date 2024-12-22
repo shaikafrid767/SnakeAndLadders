@@ -1,0 +1,81 @@
+body{
+  background-image: url("img/ddd.webp");
+  
+  background-repeat: no-repeat;
+  background-size:100vw 100vh;
+  
+}
+h3{
+  color: #B5AC49;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+td{
+text-align: center;
+padding:0px;
+height: 40px;
+width: 48px;
+
+}
+#win{
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 470px;
+}
+
+.player{
+  border-radius: 100px;
+  cursor: pointer;
+}
+#img{
+  border-radius: 10px; 
+  margin-left: 40px;
+  margin-right: 40px;
+  box-shadow: 2px 2px 20px wheat;
+  border-radius: 20%;
+}
+ #table{
+  background-image:url("img/snake.jpg");
+  background-repeat: no-repeat;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  height: 480px;
+  width: 480px;
+}
+ 
+
+@media only screen and (max-width: 480px) {
+   td{
+    text-align: center;
+    height:18px;
+    width: 28px;
+    }
+  .player {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+  #img {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15%; 
+    height: 50px;
+    width: 50px;
+  }
+  #table {
+    background-image:url("img/snake_p.jpg");
+    background-repeat: no-repeat;
+    width:280px;
+    height: 280px;
+    margin-top: 10px;
+  }
+  #win{
+    margin-left: 0px;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .id{
+    height:15px;
+    width:15px;
+  }
+}
