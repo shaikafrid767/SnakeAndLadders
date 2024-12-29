@@ -10,6 +10,14 @@
  <body onload="fun()">
 	<div id="body">
 		<img  id="win" src="">
+		<div id="rule" >
+			<button onclick="rules()">Tap for Guide</button><br>
+			<ul id="rules" style="display: none;">
+				<li>Player Enter into game only after his/her 1st six on dice</li>
+				<li>If you got 6 then you get one more chance to play</li>
+				<li>If you got a ladder then also you can get one more chance to play</li>
+			</ul>
+		</div>
 	<center>
 		<div id="total">
 		<div id="container">	
@@ -49,16 +57,20 @@
 		 <br>
 			<img class="player" id="p1" onclick="funp1()" src="img/plog1.jpg" height="80px" width="80px" style="box-shadow: 2px 2px 40px green">
 			<img id="img" src="img/start.jpg" height="70px" width="70px">
-			<img class="player" id="p2" onclick="funp2()" src="img/plog2.jpg" height="80px" width="80px"><br>
+			<img class="player" id="p2" onclick="funp2()" src="img/plog2.jpg" height="80px" width="80px"><br><br>
 			<h3 id="play1">Tap On Player1 To Start Game</h3>
 			<h3 id="play2"></h3>
 		</div>
 		<audio autoplay id="p" >
 			<source id="audio" src="" type="audio/mpeg">
 		</audio>
-		<audio autoplay id="wa" >
-			<source id="win_audio" src="" type="audio/mpeg">
+		<audio autoplay id="p1" >
+			<source id="audio1" src="" type="audio/mpeg">
 		</audio>
+		<audio autoplay id="wa" loop>
+			<source id="win_audio" src="audio/loop-.mp3" type="audio/mpeg">
+		</audio>
+		
 	</center>
 	</div>
  </body>
