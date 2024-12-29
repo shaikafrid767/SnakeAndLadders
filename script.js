@@ -1,19 +1,18 @@
-var score1=0,score2=0,p,res;
+var score1=0,score2=0,p,res,py1,py2,b=false;
 let preid1=null,preimg1=null,preid2=null,preimg2=null,id1=null,id2=null;
 let flag=false,check,bit,max100=0,ladder_chance;
 function fun(){
-    var color='lightgreen';
+    var shadow='1px 1px 20px black';
     setInterval(
         ()=>{
-            document.getElementById("play1").style.color=color;
-            document.getElementById("play2").style.color=color; 
-            if(color=='lightgreen'){
-                color='red'
+            document.getElementById("play1").style.boxShadow=shadow;
+            document.getElementById("play2").style.boxShadow=shadow; 
+            if(shadow=='1px 1px 20px black'){
+                shadow=''
             } else{
-                color='lightgreen'
+                shadow='1px 1px 20px black'
             }
-        },1000);
-        
+    },700);
 }
 
 function img(score,bit){
@@ -25,11 +24,11 @@ function img(score,bit){
     img.setAttribute('class','id');
     if(bit==1){
         img.src='img/laugh.gif';
-        audio.src='audio/laugh.mp3';
+        audio.src='audio/ladders.mp3';
         document.getElementById("p").load();
     }else if(bit==-1){
         img.src='img/cry.jpg';
-        audio.src='audio/hiss-.mp3';
+        audio.src='audio/loseing.mp3';
         document.getElementById("p").load();
     }else {
         img.src='';
@@ -47,8 +46,8 @@ function img(score,bit){
 function current(check){
     var p1=document.getElementById("p1");
     var p2=document.getElementById("p2");
-    var py1=document.getElementById("play1");
-    var py2=document.getElementById("play2");
+    py1=document.getElementById("play1");
+    py2=document.getElementById("play2");
     //for removing previous css
     p1.style.boxShadow="";
     if(check==2){
@@ -147,7 +146,9 @@ function funp1(){
     let audio=document.getElementById("audio");
     audio.src='audio/roll-.mp3';
     document.getElementById("p").load();
-    
+    setTimeout(()=>{
+        audio.src='';
+    },500);
     //remove img tag from previous position
     if(score1>0){
         document.getElementById(preid1).removeChild(preimg1);
@@ -179,7 +180,8 @@ function funp1(){
             addImage(1);
             let win=document.getElementById("win");
             win.src='img/winner1.png';
-            
+            py1.innerHTML='';
+            py2.innerHTML='';
             document.getElementsByTagName("body")[0].style.backgroundImage='url("img/cel.gif")';
 
             let audio=document.getElementById("win_audio");
@@ -188,7 +190,10 @@ function funp1(){
         }
 
         if(score1!=100){
-            addImage(1);
+            setTimeout(()=>{
+                addImage(1);
+            },500)
+            
         }
         
     }
@@ -228,6 +233,9 @@ function addImage(arg){
         preimg2=img;
     }
     
+        audio.src='audio/step.mp3';
+        document.getElementById("p").load();
+    
 }
 function funp2(){
     check=2;
@@ -237,10 +245,10 @@ function funp2(){
     var btn=document.getElementById("img");
     btn.src='img/dice.gif';
     
-    let audio=document.getElementById("audio");
-    audio.src='audio/roll-.mp3';
-    document.getElementById("p").load();
-   
+        let audio=document.getElementById("audio");
+        audio.src='audio/roll-.mp3';
+        document.getElementById("p").load();
+    
 
     //remove img tag from previous position
     if(score2>0){
@@ -275,7 +283,8 @@ function funp2(){
 
             let win=document.getElementById("win");
             win.src='img/winner2.png';
-            
+            py1.innerHTML='';
+            py2.innerHTML='';
             document.getElementsByTagName("body")[0].style.backgroundImage='url("img/cel.gif")';
 
             let audio=document.getElementById("win_audio");
@@ -285,7 +294,9 @@ function funp2(){
         }
 
         if(score2!=100){
-            addImage(2);
+            setTimeout(()=>{
+                addImage(2);
+            },500)
         }
 
     }
@@ -304,4 +315,14 @@ function funp2(){
 
     current(check);
 
+}
+function rules(){
+    if(b){
+        document.getElementById("rules").style.display='none';
+        b=false;
+    }else{
+        document.getElementById("rules").style.display='inline';
+        b=true;
+    }
+    
 }
