@@ -192,7 +192,7 @@ function funp1(){
         if(score1!=100){
             setTimeout(()=>{
                 addImage(1);
-            },500)
+            },700)
             
         }
         
@@ -296,7 +296,7 @@ function funp2(){
         if(score2!=100){
             setTimeout(()=>{
                 addImage(2);
-            },500)
+            },700)
         }
 
     }
