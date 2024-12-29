@@ -6,16 +6,27 @@ body{
   
 }
 h3{
-  color: #B5AC49;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
+  opacity: 0.9;
+  color: floralwhite;
 }
 td{
 text-align: center;
 padding:0px;
 height: 40px;
 width: 48px;
-
+}
+#play1{
+  margin-top: 30px;
+  display: inline;
+  padding: 1px;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#play2{
+  margin-top: 30px;
+  display: inline;
+  padding: 1px;
+  border-radius: 5px;
 }
 #win{
   position: absolute;
@@ -47,8 +58,9 @@ width: 48px;
 @media only screen and (max-width: 480px) {
    td{
     text-align: center;
-    height:22px;
-    width: 32px;
+    height:18px;
+    width: 28px;
+    padding-top: 5px;
     }
   .player {
     border-radius: 50%;
@@ -56,18 +68,18 @@ width: 48px;
     width: 50px;
   }
   #img {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 15%; 
     height: 50px;
     width: 50px;
   }
   #table {
-    background-image:url("img/snake_m.jpg");
+    background-image:url("img/snake_p.jpg");
     background-repeat: no-repeat;
-    width:320px;
-    height: 320px;
-    margin-top: 30px;
+    width:280px;
+    height: 280px;
+    margin-top: 10px;
   }
   #win{
     margin-left: 0px;
@@ -75,7 +87,37 @@ width: 48px;
     width: 100%;
   }
   .id{
-    height:13px;
-    width:13px;
+    height:15px;
+    width:15px;
   }
+  #rule{
+    margin-top: 430px;
+  }
+  
+}
+
+#rule{
+  position: absolute;
+}
+li{
+  background-color: wheat;
+  opacity: 0.8;
+  margin: 2px;
+  color: red;
+  list-style:none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 5px;
+  padding: 3px;
+}
+button{
+  border-radius: 5px;
+  border-top-right-radius: 20px;
+  color:darkred;
+  background-color:antiquewhite;
+  opacity: 0.5;
+  font-size: 15px;
+}
+button:hover{
+  opacity: 1;
+  cursor: pointer;
 }
