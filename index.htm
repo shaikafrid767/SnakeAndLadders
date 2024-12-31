@@ -5,21 +5,7 @@
   <link rel="shortcut icon" href="img/icon.webp" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
- <script>
-	function fun(){
-    var shadow='1px 1px 20px black';
-    setInterval(
-        ()=>{
-            document.getElementById("play1").style.boxShadow=shadow;
-            document.getElementById("play2").style.boxShadow=shadow; 
-            if(shadow=='1px 1px 20px black'){
-                shadow=''
-            } else{
-                shadow='1px 1px 20px black'
-            }
-    },700);
-}
- </script>
+ <script src="script.js"></script>
  </head>
  <body onload="fun()">
 	<div id="body">
@@ -85,6 +71,6 @@
 		
 	</center>
 	</div>
-	  <script src="script.js"></script>
+	  
  </body>
 </html>
