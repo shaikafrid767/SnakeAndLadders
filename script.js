@@ -1,7 +1,19 @@
 var score1=0,score2=0,p,res,py1,py2,b=false;
 let preid1=null,preimg1=null,preid2=null,preimg2=null,id1=null,id2=null;
 let flag=false,check,bit,max100=0,ladder_chance;
-
+function fun(){
+    var shadow='1px 1px 20px black';
+    setInterval(
+        ()=>{
+            document.getElementById("play1").style.boxShadow=shadow;
+            document.getElementById("play2").style.boxShadow=shadow; 
+            if(shadow=='1px 1px 20px black'){
+                shadow=''
+            } else{
+                shadow='1px 1px 20px black'
+            }
+    },700);
+}
 
 function img(score,bit){
     let id='a'+score;
@@ -180,7 +192,7 @@ function funp1(){
         if(score1!=100){
             setTimeout(()=>{
                 addImage(1);
-            },700)
+            },500)
             
         }
         
@@ -284,7 +296,7 @@ function funp2(){
         if(score2!=100){
             setTimeout(()=>{
                 addImage(2);
-            },700)
+            },500)
         }
 
     }
